@@ -1,0 +1,7 @@
+export { default as ChatIcon } from './Chat-icon'
+export { default as CogIcon } from './Cog-icon'
+export { default as GridIcon } from './Grid-icon'
+export { default as HomeIcon } from './Home-icon'
+export { default as StarIcon } from './Star-icon'
+export { default as TextDocumentInvertedIcon } from './TextDocumentInverted-icon'
+export { default as ToolsIcon } from './Tools-icon'
