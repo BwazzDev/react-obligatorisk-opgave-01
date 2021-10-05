@@ -10,18 +10,19 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Sidebar>
-                <Navigation/>
-            </Sidebar>
-            <DynamicContent>
-                <Route path="/welcome">
-                    <Welcome/>
-                </Route>
-                <Route path="/products">
-                    <Products/>
-                </Route>
-            </DynamicContent>
-
+            <div className="non-header">
+                <Sidebar>
+                    <Navigation/>
+                </Sidebar>
+                <DynamicContent>
+                    <Route path="/welcome">
+                        <Welcome/>
+                    </Route>
+                    <Route path="/property-listings">
+                        <Products/>
+                    </Route>
+                </DynamicContent>
+            </div>
         </div>
     );
 }
