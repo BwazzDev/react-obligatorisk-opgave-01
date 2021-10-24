@@ -1,9 +1,9 @@
 import sprite from "../../resources/img/sprite.svg";
 
-const Homes__Home = (props) => {
+const HomesCard = (props) => {
     return (
         <div className="home">
-            <img src={props.img} alt="" className="home__img"/>
+            <img src={props.imgUrl} alt="" className="home__img"/>
 
             <svg className="home__like">
                 <use href={sprite + "#icon-heart-full"}/>
@@ -36,16 +36,15 @@ const Homes__Home = (props) => {
                 <svg>
                     <use href={sprite + "#icon-key"}/>
                 </svg>
-                <p>{props.price}</p>
+                <p>${props.price.toLocaleString()}</p>
             </div>
 
-            <button className="btn home__btn">
+            {props.isPreview || <button className="btn home__btn">
                 Contact realtor
             </button>
-
-
+            }
         </div>
     );
 }
 
-export default Homes__Home;
+export default HomesCard;

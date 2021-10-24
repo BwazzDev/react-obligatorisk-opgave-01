@@ -3,20 +3,6 @@
   margin: 8rem auto;
 }
 
-
-.header {
-  display: flex;
-  align-items: center;
-  //margin-left: 2rem;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-primary-light);
-    cursor: pointer;
-  }
-}
-
 .non-header {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -41,6 +27,4 @@
 .dynamic-content {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
-  //height: 50rem;
-  //padding: 2rem;
 }

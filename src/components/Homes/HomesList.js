@@ -1,13 +1,13 @@
-import Homes__Home from "./Homes__Home";
+import HomesCard from "./HomesCard";
 import {Fragment} from "react";
 
-const Homes__List = (props) => {
+const HomesList = (props) => {
     return (
         <Fragment>
             {props.homes.map(home => (
-                <Homes__Home
+                <HomesCard
                     key={home.id}
-                    img={home.img}
+                    imgUrl={home.img}
                     name={home.name}
                     location={home.location}
                     rooms={home.rooms}
@@ -19,4 +19,4 @@ const Homes__List = (props) => {
     )
 }
 
-export default Homes__List;
+export default HomesList;

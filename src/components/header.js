@@ -1,6 +1,6 @@
 const Header = (props) => {
     return <div className="header">
-        <h2 className="heading-1">
+        <h2>
             BwazzDev RealEstate
         </h2>
     </div>

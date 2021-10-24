@@ -3,11 +3,6 @@
   font-weight: 400;
 }
 
-.heading-1 {
-  font-family: $font-primary;
-  font-weight: 400;
-}
-
 .heading-2 {
   @extend %heading;
   font-size: 4rem;
